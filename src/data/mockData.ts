@@ -1,10 +1,20 @@
-import { Agent, Lead, CallInsight } from '@/types/user';
+import { Agent, Lead, CallInsight, User } from '@/types/user';
 
 export const mockAgents: Agent[] = [
   { id: '1', name: 'James Mitchell', initials: 'JM', callsToday: 10, conversion: 34, status: 'online' },
   { id: '2', name: 'Sarah Hong', initials: 'SH', callsToday: 14, conversion: 28, status: 'online' },
   { id: '3', name: 'Marcus King', initials: 'MK', callsToday: 8, conversion: 31, status: 'busy' },
   { id: '4', name: 'Lisa Park', initials: 'LP', callsToday: 12, conversion: 42, status: 'online' },
+];
+
+export const mockUsers: User[] = [
+  { id: '1', name: 'James Mitchell', email: 'james.mitchell@company.com', role: 'sales_rep', company: 'SalesFlow Inc' },
+  { id: '2', name: 'Sarah Hong', email: 'sarah.hong@company.com', role: 'sales_rep', company: 'SalesFlow Inc' },
+  { id: '3', name: 'Marcus King', email: 'marcus.king@company.com', role: 'sales_rep', company: 'SalesFlow Inc' },
+  { id: '4', name: 'Lisa Park', email: 'lisa.park@company.com', role: 'sales_rep', company: 'SalesFlow Inc' },
+  { id: '5', name: 'Alex Rivera', email: 'alex.rivera@company.com', role: 'sdr', company: 'SalesFlow Inc' },
+  { id: '6', name: 'Emma Thompson', email: 'emma.thompson@company.com', role: 'manager', company: 'SalesFlow Inc' },
+  { id: '7', name: 'David Chen', email: 'david.chen@company.com', role: 'sysadmin', company: 'SalesFlow Inc' },
 ];
 
 export const mockLeads: Lead[] = [
